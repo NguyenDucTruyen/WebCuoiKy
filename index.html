@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - AB Green</title>
+    <link rel="stylesheet" href="./assets/css/mainstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/assets/img/logopng.png">
+    <!-- font chữ -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <header class="header">
+            <div class="header__navbar">
+                <div class="header__navbar__logo">
+                    <img class="header__navbar__logo-img" src="/assets/img/logo.png" alt="">
+                </div>
+                <div class="header__navbar__search">
+                    <form class="navbar__search__form" action="">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </div>
+                <div class="header__navbar__interact">
+                    <div class="navbar__interact__phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:0123456789">0123456789</a>
+                    </div>
+                    <div class="navbar__interact__self">
+                        <p class="nav__interact__self-buy">Giỏ hàng</p>
+                        <p class="nav__interact__self-buy" onclick="document.getElementById('get').style.display='block'">Đăng nhập</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="header__nav">
+                <ul>
+                    <li class="header__nav__list"><a href="./trangchu.html">Trang chủ</a></li>
+                    <li class="header__nav__list"><a href="#">Giới thiệu</a></li>
+                    <li class="header__nav__list">
+                        <a href="./assets/sanpham.html">Sản phẩm</a>
+                        <ul class="header__nav__list-sub">
+                            <li class="header__nav__list-subnav"><a href="">Xương Rồng</a></li>
+                            <li class="header__nav__list-subnav"><a href="">Tiểu Cảnh</a></li>
+                            <li class="header__nav__list-subnav"><a href="">Sen Đá</a></li>
+                            <li class="header__nav__list-subnav"><a href="">Cây Dàn Leo</a></li>
+                            <li class="header__nav__list-subnav"><a href="">Cây Trong Nhà</a></li>
+                            <li class="header__nav__list-subnav"><a href="">Cây Văn Phòng</a></li>
+                            <li class="header__nav__list-subnav"><a href="">Cây Treo</a></li>
+                            <li class="header__nav__list-subnav"><a href="">Chậu Cảnh</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav__list">
+                    <a href="#">Dịch vụ</a>
+                    <ul class="header__nav__list-sub">
+                    <li class="header__nav__list-subnav"><a href="">Mua bán cây cảnh</a></li>
+                    <li class="header__nav__list-subnav"><a href="">Cho thuê cây cảnh</a></li>
+                    <li class="header__nav__list-subnav"><a href="">Chăm sóc cây cảnh</a></li>
+                    </ul>
+                    </li>
+                    <li class="header__nav__list"><a href="#">Tin tức</a></li>
+                    <li class="header__nav__list"><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="container__slider"></div> 
+            <div class="container__intro">
+                <div class="container__brand">
+                    <h2 class="container__brand__title">AB Green</h2>
+                    <p class="container__brand__sologan">Gian Hàng Cây Xanh - Bầu Bạn Cùng Cây Cảnh</p>
+                    <p class="container__brand__des">AB Green, công ty chuyên cung cấp, chăm sóc cây cảnh. Với sứ mệnh mang thiên nhiên 
+                        đến với mọi người, mọi nhà, mọi lúc, mọi nơi, mọi thời điểm. Công ty chúng tôi xin cam kết về tình trạng
+                        sức khỏe, chất lượng của cây cảnh. Chúng tôi đặt sự tin tưởng và tín nhiệm lên hàng đầu. Chúng tôi dám đảm bảo
+                        bạn sẽ cảm thấy thoải mái hoàn toàn khi tin tưởng và chọn chúng tôi làm nhà cung cấp cây cảnh cho bạn.
+                    </p>
+                    <div class="container__brand__more">
+                        <a class="container__brand__more-content" href="#">XEM THÊM GIỚI THIỆU</a>
+                    </div>
+                </div>
+                <div class="container__service">
+                    <div class="container__service__segment">
+                        <div class="container__service__segment-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div class="service__segment__message">
+                            <p class="service__segment__message-title">MUA BÁN CÂY CẢNH</p>
+                            <p class="service__segment__message-des">Chủng loại cây đa dạng đáp ứng được mọi nhu cầu</p>
+                        </div>
+                    </div>
+                    <div class="container__service__segment">
+                        <div class="container__service__segment-icon">
+                            <i class="fa-solid fa-file-signature"></i>
+                        </div>
+                        <div class="service__segment__message">
+                            <p class="service__segment__message-title">CHO THUÊ CÂY CẢNH</p>
+                            <p class="service__segment__message-des">Cho thuê cây sự kiện với giá tốt thành cạnh tranh nhất</p>
+                        </div>
+                    </div>
+                    <div class="container__service__segment">
+                        <div class="container__service__segment-icon">
+                            <i class="fa-solid fa-shield-heart"></i>
+                        </div>
+                        <div class="service__segment__message">
+                            <p class="service__segment__message-title">CHĂM SÓC CÂY XANH</p>
+                            <p class="service__segment__message-des">Chăm sóc và bảo dưỡng cây cảnh bằng nghiệp vụ chuyên nghiệp</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        <!-- Sản phẩm mới -->
+            <div class="container__product ">
+                    <div class="container__product__section">
+                    <h3 class="container__product__title">Sản phẩm mới</h3>
+                </div>
+                <!-- Vùng chứa Sản Phẩm Mới -->
+                <div class="container__product__area">
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="./assets/img/da_yen_thao_kep_1.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Dạ Yến Thảo Kép</p>
+                            <div class="box__content__discount">
+                                <p>100,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 90,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/cay_phong_loc_4.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Cây Phong Lộc</p>
+                            <div class="box__content__discount">
+                                <p>280,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 230,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/cucnamphi.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Cúc Nam Phi</p>
+                            <div class="box__content__discount">
+                                <p></p>
+                            </div>
+                            <p class="box__content__price">Giá: 120,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/landinhhong.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Lan Đỉnh Hồng</p>
+                            <div class="box__content__discount">
+                                <p>180,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 165,000 đ</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        <!--Sản phẩm khuyến mãi -->
+            <div class="container__product ">
+                <div class="container__product__section">
+                    <h3 class="container__product__title">Sản phẩm khuyến mãi</h3>
+                </div>
+                <!-- Vùng chứa Sản Phẩm Khuyến Mãi -->
+                <div class="container__product__area">
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Dạ Yến Thảo Kép</p>
+                            <div class="box__content__discount">
+                                <p>100,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 90,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/Luas Nuide.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Luas Nuide</p>
+                            <div class="box__content__discount">
+                                <p>280,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 235,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/trangnguyen.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Trạng Nguyên</p>
+                            <div class="box__content__discount">
+                                <p>120,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 95,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/landinhhong.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Lan Đỉnh Hồng</p>
+                            <div class="box__content__discount">
+                                <p>180,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 165,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/devuongdo.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Đế Vương Đỏ</p>
+                            <div class="box__content__discount">
+                                <p>300,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 275,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/Sendalangoc.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Sen Đá Ngọc</p>
+                            <div class="box__content__discount">
+                                <p>110,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 100,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/xuongrongbanhbao.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Xương Rồng Bánh Bao</p>
+                            <div class="box__content__discount">
+                                <p>80,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 60,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/zulaxlavang.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Zulax Lá Vàng</p>
+                            <div class="box__content__discount">
+                                <p>250,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 230,000 đ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Banner chương trình giảm giá -->
+            <div class="container__event">
+                <div class="container__event__img">
+                    <img src="/assets/img/chuong-trinh-giam-gia.jpg" alt="" class="container__event__img-img">
+                </div>
+            </div>
+        <!-- Tin tức -->
+        
+        <div class="container__news">
+                <h3 class="container__news__heading">TIN TỨC</h3>
+                <div class="container__news__area">
+                    <!-- Tin tức phổ biến -->
+                    <div class="container__news__pop-news">
+                        <img class="container__news__img" src="/assets/img/banner.png" alt="" >
+                        <p class="container__news__title">Thay chi tiết nhỏ - đổi vận mệnh to</p>
+                        <p class="container__news__calendar">
+                            <i class="fa-solid fa-calendar-days container__news__calendar-icon"></i>
+                            19-10-2021
+                        </p>
+                        <p class="container__news__des">
+                            COMBO 2 HOẶC 3 CÂY GIÁ CHỈ #155K. COMBO với đủ các mệnh KIM - MỘC - THỦY - HỎA - THỔ cho bạn lựa chọn. Nếu bạn cảm thấy quãng thời gian này thật xui rủi, thậm chí như cả thế giới đang chống lại mình, thì có thể bạn đã bỏ qua một vấn đề lớn, chính là PHONG THUỶ! Phong thuỷ không phải là niềm tin hay tín ngưỡng mà chính là một bộ môn khoa học tổng hợp các môn học như: Kinh dịch, địa lý, vũ trụ, toán học, vật lý… Đích đến cuối cùng của phong thuỷ chính là Thiên - Nhân - Địa hợp nhất, khi con người sống hoà hợp với những quy luật của đất trời, thì sẽ được cải vận, mọi việc hanh thông.
+                        </p>
+
+                    </div>
+            <!-- Danh sách tin tức -->
+                    <div class="container__news__list">
+                        <div class="container__news__list-news">
+                            <img class="container__news__list-img" src="/assets/img/news-img.jpg" alt="" >
+                            <div class="news__lis-news__content">
+                                <p class="container__news__title ">TOP NHỮNG LOẠI CÂY XANH HÚT KHÍ ĐỘC CỰC TỐT NÊN TRỒNG NGAY</p>
+                                <p class="container__news__calendar">
+                                    <i class="fa-solid fa-calendar-days container__news__calendar-icon"></i>
+                                    19-10-2021
+                                </p>
+                                <p class="container__news__des ">
+                                    Trang trí cây xanh không chỉ đem lại không gian sống thân thiện với môi trường, mà còn giúp ích cho tinh thần luôn thoải mái...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container__news__list-news">
+                            <img class="container__news__list-img" src="/assets/img/tuoimao.jpg" alt="" >
+                            <div class="news__lis-news__content">
+                                <p class="container__news__title ">Cây phong thủy hợp tuổi Mão</p>
+                                <p class="container__news__calendar">
+                                    <i class="fa-solid fa-calendar-days container__news__calendar-icon"></i>
+                                    19-10-2021
+                                </p>
+                                <p class="container__news__des ">
+                                    Người tuổi Mão có tính cách rất gần gũi và lịch sự, họ sống chân thành, tốt bụng và yêu hòa bình...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container__news__list-news">
+                            <img class="container__news__list-img" src="/assets/img/tuoingo.jpg" alt="" >
+                            <div class="news__lis-news__content">
+                                <p class="container__news__title ">Cây phong thủy hợp tuổi Ngọ</p>
+                                <p class="container__news__calendar">
+                                    <i class="fa-solid fa-calendar-days container__news__calendar-icon"></i>
+                                    19-10-2021
+                                </p>
+                                <p class="container__news__des ">
+                                    Nhật Bản là đất nước có nhiều loại hoa quả có chất lượng thuộc hàng ngon nhất thế giới nhưng cũng vô cùng đắt đỏ...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        <footer class="footer">
+            <div class="footer__main">
+                <div class="footer__main__container">
+                    <div class="main__container_content">
+                        <p class="container__content__footer-title">Hổ trợ khách hàng</p>
+                        <ul>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">Hướng dẫn đặt hàng</a>
+                            </li>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">Chính sách giao hàng</a>
+                            </li>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">Chính sách đổi trả</a>
+                            </li>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">Hotline tư vấn: 0123.456.789</a>
+                            </li>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">Hổ trợ khách hàng: hotroabgreen@gmail.com</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="main__container_content">
+                        <p class="container__content__footer-title">Về ABGreen</p>
+                        <ul>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">Giới Thiệu AB Green</a>
+                            </li>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">Điều khoản dịch vụ</a>
+                            </li>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">Chính sách bảo mật</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="main__container_content">
+                        <p class="container__content__footer-title">Trang mạng xã hội</p>
+                        <ul>
+                            <a href="" class="container__content__footer-contact">
+                                
+                                    <i class="fa-brands fa-facebook container__content__footer-contact-icon"></i> 
+                                </a>
+                            <a href="" class="container__content__footer-contact">
+                                
+                                    <i class="fa-brands fa-instagram container__content__footer-contact-icon"></i> 
+                                </a>
+                            <a href="" class="container__content__footer-contact">
+                                
+                                    <i class="fa-brands fa-twitter container__content__footer-contact-icon"></i> 
+                                </a>
+                            <a href="" class="container__content__footer-contact">
+                                
+                                    <i class="fa-brands fa-linkedin container__content__footer-contact-icon"></i> 
+                                </a>
+                            <a href="" class="container__content__footer-contact">
+                                
+                                    <i class="fa-brands fa-printerest container__content__footer-contact-icon"></i> 
+                                </a>
+
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="main__container_content">
+                        <p class="container__content__footer-title">Kết nối với chúng tôi</p>
+                        <ul>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">
+                                    <i class="fa-solid fa-location-dot container__content__footer-list-icon"></i>
+                                    48 Cao Thắng, TP Đà Nẵng
+                                </a>
+                            </li>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">
+                                    <i class="fa-solid fa-phone container__content__footer-list-icon"></i>
+                                    0123.456.789
+                                </a>
+                            </li>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">
+                                    <i class="fa-solid fa-envelope container__content__footer-list-icon"></i>
+                                    ketnoiabgreen@gmail.com
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__more">
+                <p class="footer__more__name">ABGreen.vn</p>
+                <p class="footer__more__ads">AB Green -  nhận đặt hàng trực tuyến và giao hàng tận nơi tại TP Đà Nẵng và các tỉnh lân cận</p>
+                <p class="footer__more__des">Cây cảnh, từ trước đến nay vẫn được xem như vật trang trí, làm đẹp không gian sống cho con người. Cây để bàn, bonsai, terrarium, cây thuỷ sinh hoặc cây treo chậu… mỗi loại mỗi cây đều có ý nghĩa và vẻ đẹp riêng của mình, góp phần đáng kể làm cho cuộc sống chúng ta thêm sinh động, trở nên đáng yêu và thanh bình hơn</p>
+            </div>
+            <div class="footer_copyright">
+                <p class="footer_copyright__detail">Trang web được thiết kế bởi sinh viên: <span style="text-transform:uppercase; color: #fff; font-weight:bold;">Nguyễn Đức Truyền - MSV: 21115053120254 - Lớp HP: 221TKW03</span></p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Đăng nhập -->
+    <div id="get" class="modal">
+        <div class="modal__toast">
+            <form action="">
+             <div class="form__header">
+                 <div class="form__header__icon" onclick="document.getElementById('get').style.display='none'"><i class="fa-solid fa-xmark"></i></div>
+                <div class="form__header__logo">
+                    <img class="form__header__logo-img" src="/assets/img/logopng.png" alt="">
+                </div>
+             </div>
+             <div class="form__container">
+                 <label class="form__container__label" for="Username"><b>Tên tài khoản</b></label>
+                 <input class="form__container__input" type="text" id="Username" placeholder="Tên tài khoản">
+                 <label class="form__container__label" for="Password"><b>Mật khẩu</b></label>
+                 <input class="form__container__input" type="password" id="Passwork" placeholder="Mật khẩu">
+                 <button type="submit" class="form__container__login">Đăng nhập</button>
+                 <label  class="form__container__remember"for="">
+                     <input class="form__container__remember-checkbox" type="checkbox" checked="checked" name="remember">
+                     Nhớ mật khẩu
+                 </label>
+                 <p class="form__footer__register">Bạn chưa có tài khoản? <span style="color: #e83535; font-weight:500; text-decoration: underline;cursor: pointer;">Đăng ký ngay</span></p>
+             </div>
+             <div class="form__footer">
+                
+                     <button class="form__footer__btn" type="button" onclick="document.getElementById('get').style.display='none'" >Trở lại</button>
+                     <span><a href="#" style="color: #191b8a; font-size: 16px;;">Quên mật khẩu ?</a></span>
+                     
+                
+             </div>
+            </form>
+            
+         </div>
+    </div>
+    <script>
+    </script>
+</body>
+</html>

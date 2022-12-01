@@ -1,0 +1,125 @@
+.container{
+    width: 90%;
+    margin: 48px auto;
+}
+.container__location__text{
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+/* Thiết lập vị trị bằng flexbox */
+.container__product{
+    width: 100%;
+    display: flex;
+    margin-top: 24px;
+}
+.container__product__category{
+    flex: 2;
+    margin-top: 32px;
+}
+.container__product__area{
+    flex: 5;
+}
+
+/* Danh mục sản phẩm */
+.product__category__list-box{
+    border: 1px solid #dfdfdf;
+    border-radius: 20px;
+    position: relative;
+    margin-right: 16px;
+}
+.product__category__list-box +
+.product__category__list-box{
+    margin-top: 60px;
+}
+.product__category__title{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    padding: 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: var(--web-color);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translateY(-50%)
+}
+
+
+.product__category__list-box .product__category__list:nth-child(2){
+    padding-top: 40px;
+}
+.product__category__list{
+    list-style-type: none;
+    font-size: 14px;
+    padding: 14px 0px;
+    margin:0px 12px;
+    cursor: pointer;
+}
+.product__category__list+
+.product__category__list{
+    border-top: 0.5px solid #dfdfdf;
+}
+.product__category__list-arrow{
+    color: #333;
+    padding:2px  4px;
+}
+.product__category__list-link{
+    text-decoration: none;
+    color: #333;
+}
+.product__category__list:hover .product__category__list-link,
+.product__category__list:hover .product__category__list-arrow{
+    color: var(--web-color);
+}
+
+.product__category__list-checkbox{
+    padding: 2px 4px;
+    margin-right: 4px;
+    margin-bottom: -1px;
+    color: var(--web-color);
+}
+/* Sản phẩm */
+.container__product__area{
+padding-top: 60px;
+position: relative;
+margin-top: 0;
+margin-left: 16px;
+}
+.product__area_box{
+    width: 200px;
+}
+.product__area__heading{
+    position: absolute;
+    top: 0;
+    left: 6px;
+}
+/* Điều hướng trang sản phẩm */
+.move{
+    width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.move__link{
+    display: inline-block;
+    margin-right: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    text-align: center;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.move__link:hover,
+.move__link__now{
+    color: #fff;
+    background-color: var(--web-color);
+}

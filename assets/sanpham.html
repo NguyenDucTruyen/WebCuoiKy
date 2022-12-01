@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="./css/mainstyle.css">
+    <link rel="stylesheet" href="./css/productstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/assets/img/logo.png">
+    <!-- font chữ -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <header class="header">
+            <div class="header__navbar">
+                <div class="header__navbar__logo">
+                    <img class="header__navbar__logo-img" src="/assets/img/logo.png" alt="">
+                </div>
+                <div class="header__navbar__search">
+                    <form class="navbar__search__form" action="">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </div>
+                <div class="header__navbar__interact">
+                    <div class="navbar__interact__phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:0123456789">0123456789</a>
+                    </div>
+                    <div class="navbar__interact__self">
+                        <p class="nav__interact__self-buy">Giỏ hàng</p>
+                        <p class="nav__interact__self-buy" onclick="document.getElementById('get').style.display='block'">Đăng nhập</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="header__nav">
+                <ul>
+                    <li class="header__nav__list"><a href="../index.html">Trang chủ</a></li>
+                    <li class="header__nav__list"><a href="#">Giới thiệu</a></li>
+                    <li class="header__nav__list">
+                        <a href="./sanpham.html">Sản phẩm</a>
+                        <ul class="header__nav__list-sub">
+                            <li class="header__nav__list-subnav"><a href="">Xương Rồng</a></li>
+                            <li class="header__nav__list-subnav"><a href="">Tiểu Cảnh</a></li>
+                            <li class="header__nav__list-subnav"><a href="">Sen Đá</a></li>
+                            <li class="header__nav__list-subnav"><a href="">Cây Dàn Leo</a></li>
+                            <li class="header__nav__list-subnav"><a href="">Cây Trong Nhà</a></li>
+                            <li class="header__nav__list-subnav"><a href="">Cây Văn Phòng</a></li>
+                            <li class="header__nav__list-subnav"><a href="">Cây Treo</a></li>
+                            <li class="header__nav__list-subnav"><a href="">Chậu Cảnh</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav__list">
+                    <a href="#">Dịch vụ</a>
+                    <ul class="header__nav__list-sub">
+                    <li class="header__nav__list-subnav"><a href="">Mua bán cây cảnh</a></li>
+                    <li class="header__nav__list-subnav"><a href="">Cho thuê cây cảnh</a></li>
+                    <li class="header__nav__list-subnav"><a href="">Chăm sóc cây cảnh</a></li>
+                    </ul>
+                    </li>
+                    <li class="header__nav__list"><a href="#">Tin tức</a></li>
+                    <li class="header__nav__list"><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="container">
+            <!-- Vị trí -->
+            <div class="container__location"><p >
+                <a class="container__location__text" href="../index.html"><i class="fa-solid fa-house container__location__icon"></i> Trang chủ</a> <span>&gt;</span> <a href="./sanpham.html" style="color: var(--web-color);" >Tất cả sản phẩm</a>
+                </p>
+            </div>
+            <div class="container__product">
+                <div class="container__product__category">
+                    
+                    <ul class="product__category__list-box">
+                        <div class="product__category__title">DANH MỤC SẢN PHẨM</div>
+                        <!-- Danh sách -->
+                        <li class="product__category__list">
+                            <i class="fa-solid fa-circle-arrow-right product__category__list-arrow"></i>
+                            <a class="product__category__list-link" href="">Xương Rồng</a>
+                        </li>
+                        <!-- Danh sách -->
+                        <li class="product__category__list">
+                            <i class="fa-solid fa-circle-arrow-right product__category__list-arrow"></i>
+                            <a class="product__category__list-link" href="">Tiểu cảnh</a>
+                        </li>
+                        <!-- Danh sách -->
+                        <li class="product__category__list">
+                            <i class="fa-solid fa-circle-arrow-right product__category__list-arrow"></i>
+                            <a class="product__category__list-link" href="">Sen Đá</a>
+                        </li>
+                        <!-- Danh sách -->
+                        <li class="product__category__list">
+                            <i class="fa-solid fa-circle-arrow-right product__category__list-arrow"></i>
+                            <a class="product__category__list-link" href="">Cây Dàn Leo</a>
+                        </li>
+                        <!-- Danh sách -->
+                        <li class="product__category__list">
+                            <i class="fa-solid fa-circle-arrow-right product__category__list-arrow"></i>
+                            <a class="product__category__list-link" href="">Cây trong nhà</a>
+                        </li>
+                        <!-- Danh sách -->
+                        <li class="product__category__list">
+                            <i class="fa-solid fa-circle-arrow-right product__category__list-arrow"></i>
+                            <a class="product__category__list-link" href="">Cây Văn Phòng</a>
+                        </li>
+                        <!-- Danh sách -->
+                        <li class="product__category__list">
+                            <i class="fa-solid fa-circle-arrow-right product__category__list-arrow"></i>
+                            <a class="product__category__list-link" href="">Cây Treo</a>
+                        </li>
+                        <!-- Danh sách -->
+                        <li class="product__category__list">
+                            <i class="fa-solid fa-circle-arrow-right product__category__list-arrow"></i>
+                            <a class="product__category__list-link" href="">Chậu cảnh</a>
+                        </li>
+                        <!-- Danh sách -->
+                        <li class="product__category__list">
+                            <i class="fa-solid fa-circle-arrow-right product__category__list-arrow"></i>
+                            <a class="product__category__list-link" href="">Cây Phong Thủy</a>
+                        </li>
+                    <!-- Giá sản phẩm -->
+                       
+                        <!-- Danh sách -->
+                        <li class="product__category__list">
+                            <i class="fa-solid fa-circle-arrow-right product__category__list-arrow"></i>
+                            <a class="product__category__list-link" href="">Cây Phong Thủy</a>
+                        </li>
+
+                    </ul>
+                <!-- Giá sản phẩm -->
+                    <ul class="product__category__list-box">
+                        <div class="product__category__title">GIÁ</div>
+                        <!-- Danh sách -->
+                        <li class="product__category__list">
+                            <input class="product__category__list-checkbox" type="checkbox" checked="checked">
+                            <a class="product__category__list-link" href="">Tất cả</a>
+                        </li>
+                        <!-- Danh sách -->
+                        <li class="product__category__list">
+                            <input class="product__category__list-checkbox" type="checkbox">
+                            <a class="product__category__list-link" href="">Dưới 100k</a>
+                        </li>
+                        <!-- Danh sách -->
+                        <li class="product__category__list">
+                            <input class="product__category__list-checkbox" type="checkbox">
+                            <a class="product__category__list-link" href="">Từ 100k - 200k</a>
+                        </li>
+                        <!-- Danh sách -->
+                        <li class="product__category__list">
+                            <input class="product__category__list-checkbox" type="checkbox">
+                            <a class="product__category__list-link" href="">Từ 200k - 300k</a>
+                        </li>
+                        <!-- Danh sách -->
+                        <li class="product__category__list">
+                            <input class="product__category__list-checkbox" type="checkbox">
+                            <a class="product__category__list-link" href="">Từ 300k - 400k</a>
+                        </li>
+                        <!-- Danh sách -->
+                        <li class="product__category__list">
+                            <input class="product__category__list-checkbox" type="checkbox">
+                            <a class="product__category__list-link" href="">Trên 400k</a>
+                        </li>
+                        
+
+                    </ul>
+                </div>
+            <!-- Container chứa toàn bộ sản phẩm -->
+            
+                <div class="container__product__area">
+                    <h3 class="container__news__heading product__area__heading">Sản Phẩm</h3>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/da_yen_thao_kep_1.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Dạ Yến Thảo Kép</p>
+                            <div class="box__content__discount">
+                                <p>100,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 90,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/cay_phong_loc_4.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Đỗ Quyên Công</p>
+                            <div class="box__content__discount">
+                                <p>280,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 240,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/cucnamphi.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Cúc Nam Phi</p>
+                            <div class="box__content__discount">
+                                <p></p>
+                            </div>
+                            <p class="box__content__price">Giá: 120,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/da_yen_thao_kep_1.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Dạ Yến Thảo Kép</p>
+                            <div class="box__content__discount">
+                                <p>100,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 90,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/tieucanhsenda.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Tiểu Cảnh Sen Đá</p>
+                            <div class="box__content__discount">
+                                <p>340,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 300,000 đ</p>
+                        </div>
+                    </div>
+                    
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/besendanhieuloai.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Bể Sen Đá Nhiều Loại</p>
+                            <div class="box__content__discount">
+                                <p>430,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 399,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/trangnguyen.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Trạng Nguyên</p>
+                            <div class="box__content__discount">
+                                <p>120,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 95,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/landinhhong.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Lan Đỉnh Hồng</p>
+                            <div class="box__content__discount">
+                                <p>180,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 165,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/vuontreothunho.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Vườn Treo Thu Nhỏ</p>
+                            <div class="box__content__discount">
+                                <p>300,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 275,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/Do_quyen_cong.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Đỗ Quyên Công</p>
+                            <div class="box__content__discount">
+                                <p>150,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 120,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/xuongrongbanhbao.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Xương Rồng Bánh Bao</p>
+                            <div class="box__content__discount">
+                                <p>80,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 60,000 đ</p>
+                        </div>
+                    </div>
+                    <!-- sản phẩm -->
+                    <div class="product__area_box">
+                        <div class="area__box__content">
+                            <div class="box__content__box-img">
+                                <img src="/assets/img/zulaxlavang.jpg" alt="" class="box__content__box-img__img">
+                            </div>
+                            <p class="box__content__name">Zulax Lá Vàng</p>
+                            <div class="box__content__discount">
+                                <p>250,000 đ</p>
+                            </div>
+                            <p class="box__content__price">Giá: 230,000 đ</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="move">
+                <a href="" class="move__link move__link__now">1</a>
+                <a href="" class="move__link ">2</a>
+                <a href="" class="move__link">3</a>
+                <a href="" class="move__link">></a>
+                <a href="" class="move__link">>|</a>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__main">
+                <div class="footer__main__container">
+                    <div class="main__container_content">
+                        <p class="container__content__footer-title">Hổ trợ khách hàng</p>
+                        <ul>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">Hướng dẫn đặt hàng</a>
+                            </li>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">Chính sách giao hàng</a>
+                            </li>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">Chính sách đổi trả</a>
+                            </li>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">Hotline tư vấn: 0123.456.789</a>
+                            </li>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">Hổ trợ khách hàng: hotroabgreen@gmail.com</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="main__container_content">
+                        <p class="container__content__footer-title">Về ABGreen</p>
+                        <ul>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">Giới Thiệu AB Green</a>
+                            </li>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">Điều khoản dịch vụ</a>
+                            </li>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">Chính sách bảo mật</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="main__container_content">
+                        <p class="container__content__footer-title">Trang mạng xã hội</p>
+                        <ul>
+                            <a href="" class="container__content__footer-contact">
+                                
+                                    <i class="fa-brands fa-facebook container__content__footer-contact-icon"></i> 
+                                </a>
+                            <a href="" class="container__content__footer-contact">
+                                
+                                    <i class="fa-brands fa-instagram container__content__footer-contact-icon"></i> 
+                                </a>
+                            <a href="" class="container__content__footer-contact">
+                                
+                                    <i class="fa-brands fa-twitter container__content__footer-contact-icon"></i> 
+                                </a>
+                            <a href="" class="container__content__footer-contact">
+                                
+                                    <i class="fa-brands fa-linkedin container__content__footer-contact-icon"></i> 
+                                </a>
+                            <a href="" class="container__content__footer-contact">
+                                
+                                    <i class="fa-brands fa-printerest container__content__footer-contact-icon"></i> 
+                                </a>
+
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="main__container_content">
+                        <p class="container__content__footer-title">Kết nối với chúng tôi</p>
+                        <ul>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">
+                                    <i class="fa-solid fa-location-dot container__content__footer-list-icon"></i>
+                                    48 Cao Thắng, TP Đà Nẵng
+                                </a>
+                            </li>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">
+                                    <i class="fa-solid fa-phone container__content__footer-list-icon"></i>
+                                    0123.456.789
+                                </a>
+                            </li>
+                            <li class="container__content__footer-list">
+                                <a href="" class="container__content__footer-list-detail">
+                                    <i class="fa-solid fa-envelope container__content__footer-list-icon"></i>
+                                    ketnoiabgreen@gmail.com
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__more">
+                <p class="footer__more__name">ABGreen.vn</p>
+                <p class="footer__more__ads">AB Green -  nhận đặt hàng trực tuyến và giao hàng tận nơi tại TP Đà Nẵng và các tỉnh lân cận</p>
+                <p class="footer__more__des">Cây cảnh, từ trước đến nay vẫn được xem như vật trang trí, làm đẹp không gian sống cho con người. Cây để bàn, bonsai, terrarium, cây thuỷ sinh hoặc cây treo chậu… mỗi loại mỗi cây đều có ý nghĩa và vẻ đẹp riêng của mình, góp phần đáng kể làm cho cuộc sống chúng ta thêm sinh động, trở nên đáng yêu và thanh bình hơn</p>
+            </div>
+            <div class="footer_copyright">
+                <p class="footer_copyright__detail">Trang web được thiết kế bởi sinh viên: <span style="text-transform:uppercase; color: #fff; font-weight:bold;">Nguyễn Đức Truyền - MSV: 21115053120254 - Lớp HP: 221TKW03</span></p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Đăng nhập -->
+    <div id="get" class="modal">
+        <div class="modal__toast">
+            <form action="">
+             <div class="form__header">
+                 <div class="form__header__icon" onclick="document.getElementById('get').style.display='none'"><i class="fa-solid fa-xmark"></i></div>
+                <div class="form__header__logo">
+                    <img class="form__header__logo-img" src="/assets/img/logopng.png" alt="">
+                </div>
+             </div>
+             <div class="form__container">
+                 <label class="form__container__label" for="Username"><b>Tên tài khoản</b></label>
+                 <input class="form__container__input" type="text" id="Username" placeholder="Tên tài khoản">
+                 <label class="form__container__label" for="Password"><b>Mật khẩu</b></label>
+                 <input class="form__container__input" type="password" id="Passwork" placeholder="Mật khẩu">
+                 <button type="submit" class="form__container__login">Đăng nhập</button>
+                 <label  class="form__container__remember"for="">
+                     <input class="form__container__remember-checkbox" type="checkbox" checked="checked" name="remember">
+                     Nhớ mật khẩu
+                 </label>
+                 <p class="form__footer__register">Bạn chưa có tài khoản? <span style="color: #e83535; font-weight:500; text-decoration: underline;cursor: pointer;">Đăng ký ngay</span></p>
+             </div>
+             <div class="form__footer">
+                
+                     <button class="form__footer__btn" type="button" onclick="document.getElementById('get').style.display='none'" >Trở lại</button>
+                     <span><a href="#" style="color: #191b8a; font-size: 16px;;">Quên mật khẩu ?</a></span>
+                     <p class="form__footer__register">Bạn chưa có tài khoản?</p>
+                
+             </div>
+            </form>
+            
+         </div>
+    </div>
+    <script>
+    </script>
+</body>
+</html>
